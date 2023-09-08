@@ -52,7 +52,8 @@ vim.opt.expandtab = true
 vim.opt.relativenumber = true
 vim.opt.incsearch = true
 vim.opt.scrolloff = 10
-vim.key.set("n", "<C-c>", "<ESC>")
+
+vim.keymap.set("n", "<C-c>", "<ESC>")
 
 -- The Dark Arts
 vim.keymap.set("n", "Q", "<nop>")
@@ -60,3 +61,7 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Navigating between references
 vim.keymap.set("n", "pr", "<C-w>jk<CR>zz")
 vim.keymap.set("n", "nr", "<C-w>jj<CR>zz")
+
+-- References but better?
+vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
